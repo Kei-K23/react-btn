@@ -1,8 +1,12 @@
 {
   "name": "react-btn",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React buttons library",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,js}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix"
@@ -21,7 +25,10 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.3"
+    "styled-components": "^6.1.11",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^3.9.1"
   },
   "peerDependencies": {
     "react": "^18.3.1"
